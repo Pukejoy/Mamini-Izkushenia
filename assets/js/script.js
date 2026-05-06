@@ -25,8 +25,6 @@
     const header = $('[data-header]');
     const nav = $('#site-navigation');
     const toggle = $('.nav-toggle');
-    const dropdownToggle = $('.dropdown-toggle');
-    const dropdownParent = $('.has-dropdown');
     if (!header || !nav || !toggle) return;
 
     const setMenu = (open) => {
@@ -40,17 +38,7 @@
       if (event.target.closest('a') && innerWidth <= 900) setMenu(false);
     });
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        setMenu(false);
-        dropdownParent?.classList.remove('is-open');
-        dropdownToggle?.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    dropdownToggle?.addEventListener('click', () => {
-      const open = !dropdownParent.classList.contains('is-open');
-      dropdownParent.classList.toggle('is-open', open);
-      dropdownToggle.setAttribute('aria-expanded', String(open));
+      if (event.key === 'Escape') setMenu(false);
     });
 
     let ticking = false;
