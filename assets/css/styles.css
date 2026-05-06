@@ -1416,3 +1416,80 @@ textarea:user-invalid {
   }
 }
 /* === Responsive media queries: end === */
+
+/* === FAQ page enhancements: start === */
+.faq-quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+  margin-top: 1.5rem;
+}
+
+.faq-quick-facts div {
+  padding: .9rem 1rem;
+  border: 1px solid rgba(61, 43, 37, .1);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .7);
+  backdrop-filter: blur(4px);
+}
+
+.faq-quick-facts strong {
+  display: block;
+  margin-bottom: .3rem;
+  color: var(--color-brown);
+}
+
+.faq-quick-facts span {
+  color: var(--color-brown-soft);
+  font-size: .92rem;
+}
+
+.faq-process {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.faq-process__step {
+  position: relative;
+  padding: 1.2rem;
+  border: 1px solid rgba(61, 43, 37, .1);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-strong);
+  box-shadow: var(--shadow-card);
+}
+
+.faq-process__step span {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-bottom: .8rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 900;
+}
+
+.faq-cards .contact-card {
+  border-top: 4px solid rgba(166, 64, 96, .26);
+}
+
+.faq-page .contact-card span {
+  color: var(--color-brown);
+  font-size: 1.06rem;
+  font-weight: 850;
+  margin-bottom: .45rem;
+}
+
+.faq-cta {
+  margin-top: 1.2rem;
+}
+/* === FAQ page enhancements: end === */
+
+@media (max-width: 900px) {
+  .faq-quick-facts,
+  .faq-process {
+    grid-template-columns: 1fr;
+  }
+}
