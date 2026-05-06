@@ -698,7 +698,7 @@ textarea:user-invalid {
 .product-card__media {
   position: relative;
   display: block;
-  aspect-ratio: 1.28 / 1;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--color-pink-warm);
 }
@@ -931,6 +931,9 @@ textarea:user-invalid {
 
 .product-detail__media img {
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
 }
 
 .product-summary {
