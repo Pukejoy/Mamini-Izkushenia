@@ -927,6 +927,17 @@ textarea:user-invalid {
   gap: 1.5rem;
   padding: clamp(1.25rem, 4vw, 2rem);
 }
+
+.cta-panel .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: .95rem 1.4rem;
+  line-height: 1.2;
+  text-align: center;
+  white-space: normal;
+}
 /* === Cards and product grids: end === */
 
 /* === Detail and content sections: start === */
