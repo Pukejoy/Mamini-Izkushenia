@@ -112,8 +112,8 @@
 </div>
 <div data-netlify-recaptcha="true"></div>
 <div class="consent-row">
-<input id="order-consent" type="checkbox" name="consent" required>
-<label for="order-consent" class="consent-label">Съгласен/съгласна съм данните ми да бъдат използвани за обработка на заявката.</label>
+<input id="order-consent" class="consent-checkbox" type="checkbox" name="consent" required aria-describedby="order-consent-text">
+<p id="order-consent-text" class="consent-label">С поставянето на отметката се съгласявам с <a href="/data-policy.html">Политиката за лични данни</a> и <a href="/orders-policy.html">Политиката за поръчки</a>.</p>
 </div>
 <button class="btn btn--primary" type="submit">Изпрати заявка</button>
 </form>
