@@ -97,7 +97,11 @@
         card.hidden = !show;
         if (show) visible += 1;
       });
-      buttons.forEach((button) => button.classList.toggle('is-active', button.dataset.filter === category));
+      buttons.forEach((button) => {
+        const isActive = button.dataset.filter === category;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
       if (emptyState) emptyState.hidden = visible !== 0;
       if (updateUrl) {
         const url = new URL(location.href);
@@ -108,7 +112,10 @@
 
     buttons.forEach((button) => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
     const initial = new URLSearchParams(location.search).get('category');
-    applyFilter(buttons.some((button) => button.dataset.filter === initial) ? initial : 'all', false);
+    const hasInitial = buttons.some((button) => button.dataset.filter === initial);
+    const selectedCategory = hasInitial ? initial : 'all';
+    const shouldNormalizeUrl = initial === 'all' || (initial && !hasInitial);
+    applyFilter(selectedCategory, shouldNormalizeUrl);
   };
 
   const submitForm = async (form, messageBox) => {

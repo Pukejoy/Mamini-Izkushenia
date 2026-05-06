@@ -829,22 +829,40 @@ textarea:user-invalid {
 }
 
 .filter-btn {
-  border: 1px solid rgba(61, 43, 37, .14);
-  border-radius: 999px;
+  border: 1px solid rgba(61, 43, 37, .16);
+  border-radius: var(--radius-sm);
   background: var(--color-surface-strong);
-  color: var(--color-brown);
-  padding: .7rem 1rem;
-  font-weight: 800;
+  color: var(--color-brown-soft);
+  padding: .6rem 1.1rem;
+  font-weight: 700;
+  line-height: 1.25;
   cursor: pointer;
-  transition: background-color .18s ease, color .18s ease, border-color .18s ease;
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease;
 }
 
-.filter-btn:hover,
-.filter-btn:focus-visible,
+.filter-btn:hover {
+  background: var(--color-pink-warm);
+  border-color: rgba(166, 64, 96, .35);
+  color: var(--color-primary-hover);
+}
+
+.filter-btn:focus-visible {
+  outline: 3px solid rgba(166, 64, 96, .28);
+  outline-offset: 2px;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(166, 64, 96, .12);
+}
+
 .filter-btn.is-active {
   background: var(--color-primary);
   color: #fffdf9;
   border-color: var(--color-primary);
+  box-shadow: 0 8px 18px rgba(166, 64, 96, .24);
+}
+
+.filter-btn.is-active:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
 }
 
 .empty-state {
