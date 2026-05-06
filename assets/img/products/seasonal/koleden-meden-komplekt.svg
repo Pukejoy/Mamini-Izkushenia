@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Коледен меден комплект</title>
+<desc id="desc">Илюстрация на десерт от категория Сезонни.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff9f2"/><stop offset="1" stop-color="#e9d9dd"/></linearGradient>
+<linearGradient id="halo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7e2"/><stop offset="1" stop-color="#f1c269"/></linearGradient>
+</defs>
+<rect width="900" height="650" rx="44" fill="url(#bg)"/>
+<circle cx="690" cy="130" r="155" fill="url(#halo)" opacity=".52"/>
+<circle cx="190" cy="115" r="95" fill="#fff7e2" opacity=".55"/>
+
+        <ellipse cx="450" cy="565" rx="255" ry="32" fill="#000" opacity=".08"/>
+        <rect x="265" y="325" width="370" height="210" rx="36" fill="#fff7e2"/>
+        <path d="M285 382h330" stroke="#a64060" stroke-width="20" stroke-linecap="round" opacity=".78"/>
+        <path d="M295 458h310" stroke="#3f6b45" stroke-width="18" stroke-linecap="round" opacity=".68"/>
+        <circle cx="352" cy="370" r="42" fill="#f1c269"/>
+        <circle cx="450" cy="442" r="54" fill="#a64060" opacity=".86"/>
+        <circle cx="553" cy="375" r="44" fill="#f1c269" opacity=".9"/>
+        <path d="M332 513c72-40 160-40 236 0" stroke="#a64060" stroke-width="14" fill="none" stroke-linecap="round" opacity=".58"/>
+        <path d="M450 260c24 38 18 72 0 98c-18-26-24-60 0-98z" fill="#3f6b45" opacity=".8"/>
+        
+<rect x="52" y="52" width="210" height="48" rx="24" fill="#fffdf9" opacity=".92"/>
+<text x="157" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#3d2b25">Сезонни</text>
+</svg>

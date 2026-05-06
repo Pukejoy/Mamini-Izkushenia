@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mamini-izkushenia.netlify.app/sitemap.xml

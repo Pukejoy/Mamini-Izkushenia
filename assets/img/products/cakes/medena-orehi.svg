@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Медена торта с орехи</title>
+<desc id="desc">Илюстрация на десерт от категория Торти.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff9f2"/><stop offset="1" stop-color="#e9d9dd"/></linearGradient>
+<linearGradient id="halo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0bf"/><stop offset="1" stop-color="#f4c56d"/></linearGradient>
+</defs>
+<rect width="900" height="650" rx="44" fill="url(#bg)"/>
+<circle cx="690" cy="130" r="155" fill="url(#halo)" opacity=".52"/>
+<circle cx="190" cy="115" r="95" fill="#fff0bf" opacity=".55"/>
+
+        <ellipse cx="450" cy="560" rx="250" ry="34" fill="#000" opacity=".08"/>
+        <path d="M225 335h450v146c0 58-48 98-108 98H333c-60 0-108-40-108-98z" fill="#f4c56d"/>
+        <path d="M225 335h450v78H225z" fill="#b66d2e"/>
+        <path d="M265 412h370v48H265z" fill="#fff0bf" opacity=".82"/>
+        <path d="M250 320c38-76 98-114 181-114h40c86 0 149 38 188 114z" fill="#fff0bf"/>
+        <path d="M295 318c29-45 77-68 145-68h31c69 0 117 23 146 68z" fill="#f4c56d" opacity=".75"/>
+        <circle cx="356" cy="285" r="25" fill="#b66d2e"/>
+        <circle cx="470" cy="260" r="20" fill="#8a5a32" opacity=".78"/>
+        <circle cx="560" cy="292" r="22" fill="#b66d2e" opacity=".82"/>
+        <path d="M238 482c120 42 299 42 424 0" fill="none" stroke="#8a5a32" stroke-width="14" stroke-linecap="round" opacity=".55"/>
+        
+<rect x="52" y="52" width="210" height="48" rx="24" fill="#fffdf9" opacity=".92"/>
+<text x="157" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#3d2b25">Торти</text>
+</svg>

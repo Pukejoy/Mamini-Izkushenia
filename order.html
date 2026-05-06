@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Поръчай сега | Мамини изкушения</title>
+<meta name="description" content="Изпратете заявка за торта, сладки, сезонен десерт или персонална поръчка от Мамини изкушения.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#fff9f2">
+<meta property="og:locale" content="bg_BG">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Поръчай сега | Мамини изкушения">
+<meta property="og:description" content="Изпратете заявка за торта, сладки, сезонен десерт или персонална поръчка от Мамини изкушения.">
+<meta property="og:image" content="https://mamini-izkushenia.netlify.app/assets/img/og-image.png">
+<meta property="og:url" content="https://mamini-izkushenia.netlify.app/order.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/assets/css/styles.css" as="style">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script src="/assets/js/script.js" defer></script>
+
+</head>
+<body class="order-page">
+<a class="skip-link" href="#main-content">Към основното съдържание</a>
+<div id="site-header" data-component="header"></div>
+<main id="main-content">
+
+<section class="page-hero page-hero--compact">
+<div class="container" data-reveal>
+<p class="eyebrow">Заявка</p>
+<h1>Поръчай сега</h1>
+<p class="lead">Попълнете формата и ще получите потвърждение след преглед на заявката. Поръчката се счита за приета след уточняване на всички детайли.</p>
+</div>
+</section>
+<section class="section">
+<div class="container form-layout">
+<div class="form-intro" data-reveal>
+<h2>Какво е добре да знаете</h2>
+<p>За стандартни десерти препоръчваме заявка поне 48 часа предварително. За персонални торти и по-големи кутии е добре да ни пишете по-рано.</p>
+<ul class="check-list">
+<li>Работим с предварителни заявки.</li>
+<li>Доставката или получаването се уточняват индивидуално.</li>
+<li>При алергии отбележете подробности в съобщението.</li>
+</ul>
+</div>
+<form class="order-form card-form" name="order" method="POST" action="/order.html?success=true" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-form="order" novalidate data-reveal>
+<input type="hidden" name="form-name" value="order">
+<p class="hidden-field"><label>Не попълвайте това поле <input name="bot-field" autocomplete="off"></label></p>
+<div class="form-message" data-form-message hidden></div>
+<div class="form-row">
+<label for="name">Име и фамилия</label>
+<input id="name" name="name" type="text" autocomplete="name" required minlength="2">
+</div>
+<div class="form-row form-row--split">
+<div>
+<label for="phone">Телефон</label>
+<input id="phone" name="phone" type="tel" autocomplete="tel" required>
+</div>
+<div>
+<label for="email">Имейл</label>
+<input id="email" name="email" type="email" autocomplete="email" required>
+</div>
+</div>
+<div class="form-row form-row--split">
+<div>
+<label for="product">Продукт</label>
+<select id="product" name="product" required>
+<option value="">Изберете продукт</option>
+<option value="chocolate-domashen-uyut">Шоколадова торта „Домашен уют“</option>
+<option value="malinova-vanilia">Малинова торта с ванилов крем</option>
+<option value="medena-orehi">Медена торта с орехи</option>
+<option value="morkovena">Морковена торта с крем сирене</option>
+<option value="masleni-vanilia">Маслени сладки с ванилия</option>
+<option value="makaroni-roza">Френски макарони с българска роза</option>
+<option value="orehovki">Ореховки по домашна рецепта</option>
+<option value="koleden-meden-komplekt">Коледен меден комплект</option>
+<option value="kozunacheni-hapki">Великденски козуначени хапки</option>
+<option value="tart-yabalki-kanela">Есенен тарт с ябълки и канела</option>
+<option value="mini-torta-rozhden-den">Мини торта за рожден ден</option>
+<option value="praznichna-kutia">Празнична кутия по избор</option>
+<option value="custom-request">Персонална идея</option>
+</select>
+</div>
+<div>
+<label for="servings">Количество или порции</label>
+<input id="servings" name="servings" type="text" placeholder="напр. 10 парчета" required>
+</div>
+</div>
+<div class="form-row form-row--split">
+<div>
+<label for="date">Желана дата</label>
+<input id="date" name="date" type="date" required>
+</div>
+<div>
+<label for="delivery">Получаване</label>
+<select id="delivery" name="delivery" required>
+<option value="">Изберете</option>
+<option value="pickup">Вземане след уговорка</option>
+<option value="delivery-sofia">Доставка в София</option>
+<option value="delivery-region">Доставка в Софийска област</option>
+</select>
+</div>
+</div>
+<div class="form-row">
+<label for="address">Адрес или предпочитан район</label>
+<input id="address" name="address" type="text" autocomplete="street-address" placeholder="Попълва се при доставка">
+</div>
+<div class="form-row">
+<label for="message">Допълнителни детайли</label>
+<textarea id="message" name="message" rows="5" placeholder="Повод, вкус, надпис, цветове, алергии или друг важен детайл"></textarea>
+</div>
+<div data-netlify-recaptcha="true"></div>
+<label class="consent-row">
+<input type="checkbox" name="consent" required>
+<span>Съгласен/съгласна съм данните ми да бъдат използвани за обработка на заявката.</span>
+</label>
+<button class="btn btn--primary" type="submit">Изпрати заявка</button>
+</form>
+</div>
+</section>
+</main>
+<div id="site-footer" data-component="footer"></div>
+</body>
+</html>

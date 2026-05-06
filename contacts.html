@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контакти | Мамини изкушения</title>
+<meta name="description" content="Контакти на Мамини изкушения за поръчки, въпроси и персонални десерти в София и Софийска област.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#fff9f2">
+<meta property="og:locale" content="bg_BG">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Контакти | Мамини изкушения">
+<meta property="og:description" content="Контакти на Мамини изкушения за поръчки, въпроси и персонални десерти в София и Софийска област.">
+<meta property="og:image" content="https://mamini-izkushenia.netlify.app/assets/img/og-image.png">
+<meta property="og:url" content="https://mamini-izkushenia.netlify.app/contacts.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/assets/css/styles.css" as="style">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script src="/assets/js/script.js" defer></script>
+
+</head>
+<body class="contacts-page">
+<a class="skip-link" href="#main-content">Към основното съдържание</a>
+<div id="site-header" data-component="header"></div>
+<main id="main-content">
+
+<section class="page-hero page-hero--compact">
+<div class="container" data-reveal>
+<p class="eyebrow">Контакти</p>
+<h1>Свържете се с нас</h1>
+<p class="lead">Пишете ни за въпрос, персонална идея или уточнение по поръчка. Отговаряме в рамките на работното време.</p>
+</div>
+</section>
+<section class="section">
+<div class="container contact-layout">
+<div class="contact-cards">
+<article class="contact-card" data-reveal><span>Телефон</span><a href="tel:+359888123456">+359 888 123 456</a></article>
+<article class="contact-card" data-reveal><span>Имейл</span><a href="mailto:porachki@maminizkushenia.bg">porachki@maminizkushenia.bg</a></article>
+<article class="contact-card" data-reveal><span>Обслужване</span><p>София и Софийска област</p></article>
+<article class="contact-card" data-reveal><span>Работно време</span><p>Понеделник–събота: 09:00–18:00</p></article>
+</div>
+<form class="card-form" name="contact" method="POST" action="/contacts.html?success=true" data-netlify="true" netlify-honeypot="bot-field" data-form="contact" novalidate data-reveal>
+<input type="hidden" name="form-name" value="contact">
+<p class="hidden-field"><label>Не попълвайте това поле <input name="bot-field" autocomplete="off"></label></p>
+<div class="form-message" data-form-message hidden></div>
+<div class="form-row"><label for="contact-name">Име</label><input id="contact-name" name="name" type="text" autocomplete="name" required></div>
+<div class="form-row form-row--split"><div><label for="contact-phone">Телефон</label><input id="contact-phone" name="phone" type="tel" autocomplete="tel"></div><div><label for="contact-email">Имейл</label><input id="contact-email" name="email" type="email" autocomplete="email" required></div></div>
+<div class="form-row"><label for="contact-message">Съобщение</label><textarea id="contact-message" name="message" rows="6" required></textarea></div>
+<label class="consent-row"><input type="checkbox" name="consent" required><span>Съгласен/съгласна съм данните ми да бъдат използвани за отговор на запитването.</span></label>
+<button class="btn btn--primary" type="submit">Изпрати съобщение</button>
+</form>
+</div>
+</section>
+<section class="section section--tinted">
+<div class="container map-panel" data-reveal>
+<div>
+<p class="eyebrow">Район на обслужване</p>
+<h2>София и Софийска област</h2>
+<p>Детайлите за получаване или доставка се уточняват след преглед на заявката.</p>
+</div>
+<div class="map-illustration" aria-hidden="true"><span>София</span><span>Софийска област</span></div>
+</div>
+</section>
+</main>
+<div id="site-footer" data-component="footer"></div>
+</body>
+</html>
