@@ -504,7 +504,7 @@ p {
 }
 
 label,
-.consent-row span {
+.consent-label {
   color: var(--color-brown);
   font-weight: 750;
 }
@@ -552,17 +552,35 @@ textarea:user-invalid {
 
 .consent-row {
   display: grid;
-  grid-template-columns: 1.1rem 1fr;
-  gap: .65rem;
+  grid-template-columns: auto 1fr;
+  gap: .7rem;
   align-items: start;
   font-size: .95rem;
 }
 
-.consent-row input {
-  width: 1.1rem;
-  height: 1.1rem;
-  margin-top: .22rem;
+.consent-row input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: .15rem;
   accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.consent-row input[type="checkbox"]:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(166, 64, 96, .18);
+  border-radius: .25rem;
+}
+
+.consent-row input[type="checkbox"]:checked {
+  filter: saturate(115%);
+}
+
+.consent-label {
+  display: inline-block;
+  line-height: 1.45;
+  cursor: pointer;
+  min-height: 2.25rem;
 }
 
 .form-message {
@@ -987,6 +1005,12 @@ textarea:user-invalid {
 .feature-list span,
 .contact-card span {
   color: var(--color-brown-soft);
+}
+
+.contact-card a,
+.contact-card p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .breadcrumbs {
