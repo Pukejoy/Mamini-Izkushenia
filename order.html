@@ -112,10 +112,10 @@
 <textarea id="message" name="message" rows="5" placeholder="Повод, вкус, надпис, цветове, алергии или друг важен детайл"></textarea>
 </div>
 <div data-netlify-recaptcha="true"></div>
-<label class="consent-row">
-<input type="checkbox" name="consent" required>
-<span>Съгласен/съгласна съм данните ми да бъдат използвани за обработка на заявката.</span>
-</label>
+<div class="consent-row">
+<input id="order-consent" type="checkbox" name="consent" required>
+<label for="order-consent" class="consent-label">Съгласен/съгласна съм данните ми да бъдат използвани за обработка на заявката.</label>
+</div>
 <button class="btn btn--primary" type="submit">Изпрати заявка</button>
 </form>
 </div>
