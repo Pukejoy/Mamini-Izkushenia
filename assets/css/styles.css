@@ -1037,19 +1037,44 @@ textarea:user-invalid {
   color: var(--color-brown-soft);
 }
 
-.contact-card a,
-.contact-card p {
-  overflow-wrap: anywhere;
-  word-break: break-word;
+.contacts-page .contact-layout {
+  grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr);
 }
 
+.contacts-page .contact-cards {
+  gap: 1rem;
+}
 
-.contact-card--email a {
-  font-size: clamp(.98rem, 1.35vw, 1.15rem);
-  line-height: 1.45;
-  font-weight: 820;
-  overflow-wrap: break-word;
-  word-break: normal;
+.contacts-page .contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 8.3rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: 1.45rem;
+  background: linear-gradient(145deg, #ffffff, #fff7ef);
+  box-shadow: 0 12px 28px rgba(61, 43, 37, .09);
+}
+
+.contacts-page .contact-card span {
+  margin-bottom: .22rem;
+  font-size: .86rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.contacts-page .contact-card a,
+.contacts-page .contact-card p {
+  margin: 0;
+  font-size: clamp(.96rem, 1.15vw, 1.1rem);
+  font-weight: 780;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.contacts-page .contact-card--email a {
+  font-size: clamp(.86rem, 1.02vw, .99rem);
+  letter-spacing: .01em;
 }
 
 .breadcrumbs {
